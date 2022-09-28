@@ -8,7 +8,7 @@ module.exports = function override(config) {
     '@hooks': 'src/hooks',
     '@context': 'src/context',
     '@public': 'public',
-    '@static': '@src/static',
+    '@static': 'src/static',
   })(config);
 
   return config;

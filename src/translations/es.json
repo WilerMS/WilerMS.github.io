@@ -1,0 +1,18 @@
+{
+    "frontend": "Desarrollo Frontend",
+    "backend": "Desarrollo Backend",
+    "Advanced": "Avanzado",
+    "Intermediate": "Intermedio",
+    "Basic": "Básico",
+    "Home": "Inicio",
+    "Skills": "Habilidades",
+    "Qualification": "Cualificación",
+    "Projects": "Proyectos",
+    "Services": "Servicios",
+    "Contact": "Contacto",
+    "My favourite skills": "Mi Habilidades favoritas",
+    "Experience & education": "Experiencia y Estudios",
+    "Computer Engineering": "Ingeniería Informática",
+    "Computer Network System Administration": "Administración de sistemas informáticos en red",
+    "Web Development School": "Escuela de desarrollo web"
+}
