@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components'
+import styled from 'styled-components'
 import * as constants from '@src/constants/styles.constants'
 
 export const Wrapper = styled.div`
@@ -20,7 +20,7 @@ export const Wrapper = styled.div`
         display: flex;
 
         @media (max-width: ${constants.MEDIA_QUERIES.md}px) {
-            bottom: calc(${constants.MOBILE_NAVBAR.HEIGHT} );
+            bottom: calc(${constants.MOBILE_NAVBAR.HEIGHT} * 1.5 );
         }
 
         img {
