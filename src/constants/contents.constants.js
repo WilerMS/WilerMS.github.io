@@ -11,12 +11,13 @@ import {
   BiBuildingHouse,
 } from 'react-icons/bi'
 import {
-  Home
+  Home,
+  Skills
 } from '@pages'
 
 export const pages = [
   { id: 'home', href: '#home', text: 'Home', Icon: RiHome2Line, Component: Home },
-  { id: 'skills', href: '#skills', text: 'Skills', Icon: RiTrophyLine, Component: Home },
+  { id: 'skills', href: '#skills', text: 'Skills', Icon: RiTrophyLine, Component: Skills },
   { id: 'qualification', href: '#qualification', text: 'Qualification', Icon: RiBookReadLine, Component: Home },
   { id: 'projects', href: '#projects', text: 'Projects', Icon: RiImageFill, Component: Home },
   { id: 'services', href: '#services', text: 'Services', Icon: RiSuitcaseLine , Component: Home},
@@ -27,7 +28,7 @@ export const skills = [
   {
     name: 'frontend',
     items: [
-      { title: 'HTML', subtitle: 'Advanced', skills: require('@static/html.svg').default },
+      { title: 'HTML', subtitle: 'Advanced', img: require('@static/html.svg').default },
       { title: 'CSS', subtitle: 'Advanced', img: require('@static/css.svg').default },
       { title: 'JavaScript', subtitle: 'Advanced', img: require('@static/javascript.svg').default },
       { title: 'React', subtitle: 'Intermediate', img: require('@static/react.svg').default },
