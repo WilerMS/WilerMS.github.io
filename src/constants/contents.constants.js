@@ -20,7 +20,6 @@ export const pages = [
   { id: 'skills', href: '#skills', text: 'Skills', Icon: RiTrophyLine, Component: Skills },
   { id: 'qualification', href: '#qualification', text: 'Qualification', Icon: RiBookReadLine, Component: Home },
   { id: 'projects', href: '#projects', text: 'Projects', Icon: RiImageFill, Component: Home },
-  { id: 'services', href: '#services', text: 'Services', Icon: RiSuitcaseLine , Component: Home},
   { id: 'contact', href: '#contact', text: 'Contact', Icon: RiChat3Line, Component: Home },
 ]
 

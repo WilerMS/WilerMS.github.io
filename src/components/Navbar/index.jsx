@@ -1,10 +1,11 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import useWindowsDimensions from '@hooks/useWindowsDimensions'
 import { MEDIA_QUERIES } from '@src/constants/styles.constants'
 import * as Desktop from '@components/Navbar/desktop.styled'
 import * as Mobile from '@components/Navbar/mobile.styled'
 import ThemeToggler from '@components/ThemeToggler'
 import LangToggler from '@components/LangToggler'
+import logo from '@static/logo.svg'
 
 import { FaRegTimesCircle } from 'react-icons/fa'
 import { HiMenu } from 'react-icons/hi'
@@ -12,16 +13,41 @@ import { pages } from '@src/constants/contents.constants'
 import { useTranslation } from 'react-i18next'
 
 const DeskTopNavbar = () => {
+
+  console.log({logo})
+
   const { t } = useTranslation()
+  const [scrolled, setScrolled] = useState(false)
+  const [activeLink, setActiveLink] = useState('home')
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 50)
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [])
+
+
   return (
-    <Desktop.Wrapper className='navbar-section'>
+    <Desktop.Wrapper isBgActive={scrolled} className='navbar-section'>
       <Desktop.Navbar className='navbar'>
         <div className='navbar-logo'>
-          <Desktop.NavLogo href='#home'>Wiler Mariñez</Desktop.NavLogo>
+          <Desktop.NavLogo 
+            href='#home'
+            onClick={() => setActiveLink('home')}
+          >
+            Wiler Mariñez
+          </Desktop.NavLogo>
         </div>
         <nav className='navbar-items'>
-          {pages.map(({ href, text }) => (
-            <Desktop.NavItem key={text} href={href}>{t(text)}</Desktop.NavItem>
+          {pages.map(({ href, text, id }) => (
+            <Desktop.NavItem 
+              key={text}
+              href={href}
+              className={activeLink === id ? 'selected' : ''}
+              onClick={() => setActiveLink(id)}
+            >
+              {t(text)}
+            </Desktop.NavItem>
           ))}
           <ThemeToggler />
           <LangToggler />

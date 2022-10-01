@@ -1,5 +1,5 @@
-export const MAX_WIDTH = '1200px'
-export const DESKTOP_NAVBAR_HEIGHT = '85px'
+export const MAX_WIDTH = '1300px'
+export const DESKTOP_NAVBAR_HEIGHT = '120px'
 export const MOBILE_NAVBAR = {
     MAX_WIDTH: '560px',
     WIDTH: '95%',
@@ -23,7 +23,7 @@ export const FONT_SIZES = {
 }
 export const MEDIA_QUERIES = {
     sm: 500,
-    md: 960,
-    lg: 1240,
+    md: 1000,
+    lg: 1330,
     xl: 1920,
 }

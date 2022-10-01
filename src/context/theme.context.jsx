@@ -8,7 +8,7 @@ const ThemeContext = createContext()
 
 export const ContextThemeProvider = ({ children }) => {
 
-  const [theme, setTheme] = useLocalStorage('theme', 'light')
+  const [theme, setTheme] = useLocalStorage('theme', 'dark')
 
   return (
     <ThemeContext.Provider

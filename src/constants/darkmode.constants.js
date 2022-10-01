@@ -1,3 +1,6 @@
+import bg_dark from '@static/bg_dark.png'
+import bg_light from '@static/bg_light.jpg'
+
 export const theme = {
     dark: {
         page_bg: '#161819',
@@ -10,7 +13,9 @@ export const theme = {
         navbar_shadow: '-1px 1px 18px 1px rgba(0,0,0,0.53)',
         skillsIcon: '#98989830',
         toogle_lang_bg: '#98989830',
-        toogle_lang_slider: 'white'
+        toogle_lang_slider: 'white',
+        home_background: bg_dark,
+        
     },
     light: {
         page_bg: '#fff',
@@ -24,6 +29,6 @@ export const theme = {
         skillsIcon: '#98989830',
         toogle_lang_bg: '#98989830',
         toogle_lang_slider: 'darkgray',
-
+        home_background: bg_light,
     }
 }

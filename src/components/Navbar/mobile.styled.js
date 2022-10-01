@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import * as constants from '@src/constants/styles.constants'
 
 export const Wrapper = styled.section`
+  z-index: 100;
   width: 100%;
   height: ${constants.MOBILE_NAVBAR.WRAPPER_HEIGHT};
   position: fixed;

@@ -37,6 +37,9 @@ export const Skills = ({ id }) => {
 
   return (
     <Styled.Wrapper id={id}>
+      <div className="about">
+        <h2>About me</h2>
+      </div>
       <div className="layout">
         <div className='layout-header'>
           <h1>{t('Skills')}</h1>

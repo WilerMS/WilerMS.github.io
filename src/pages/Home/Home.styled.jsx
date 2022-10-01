@@ -1,7 +1,23 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import * as constants from '@src/constants/styles.constants'
 
+const animation = keyframes`
+    0% {
+        transform: translateY(0);
+    } 
+    50% {
+        transform: translateY(30px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+`
+
 export const Wrapper = styled.div`
+    background: url(${props => props.theme.home_background});
+    background-size: cover;
+    -webkit-transition: background-image 0.2s ease-in-out;
+    transition: background-image 0.2s ease-in-out;
     width: 100%;
     min-height: calc(100vh);
     padding-top: calc(${constants.DESKTOP_NAVBAR_HEIGHT});
@@ -9,51 +25,71 @@ export const Wrapper = styled.div`
     position: relative;
     display: flex;
     align-items: center;
-
     flex-direction: column;
-
-    .wallpaper {
-        width: 70%;
-        max-width: 1000px;
-        position: absolute;
-        bottom: 0;
-        display: flex;
-
-        @media (max-width: ${constants.MEDIA_QUERIES.md}px) {
-            bottom: calc(${constants.MOBILE_NAVBAR.HEIGHT} * 1.5 );
-        }
-
-        img {
-            width: 100%;
-        }
-    }
+    justify-content: center;
 
     .layout {
         display: flex;
-        flex-direction: column;
         align-items: center;
         width: ${constants.WRAPPER_WIDTHS.lg};
         max-width: ${constants.MAX_WIDTH};
+        height: 50vh;
+        margin-bottom: 200px;
 
-        @media (max-width: ${constants.MEDIA_QUERIES.sm}px) {
+        @media (max-width: ${constants.MEDIA_QUERIES.md}px) {
             width: ${constants.WRAPPER_WIDTHS.sm};
+            flex-direction: column;
         }
 
         &-title {
+            width: 60%;
             text-align: center;
-            margin-top: 120px;
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 10px;
             
             h2 {
-                font-weight: 400;
-                font-size: 4rem;
+                font-size: 5rem;
+
+                @media (max-width: ${constants.MEDIA_QUERIES.lg}px) {
+                    font-size: 2rem;
+                }
 
                 @media (max-width: ${constants.MEDIA_QUERIES.sm}px) {
                     font-size: 3rem;
                 }
+            }
+
+            a {
+                margin-top: 50px;
+                background: linear-gradient(90.21deg,rgba(170,54,124,.5) -5.91%,rgba(74,47,189,.5) 111.58%);
+                padding: 15px;
+                border: 1px solid hsla(0,0%,100%,.2);
+                border-radius: 2px;
+                transition: background .5s ease;
+                color: white;
+
+                &:hover {
+                    background: linear-gradient(90.21deg,#8b2b655b -5.91%,#301f7d57 111.58%);
+                }
+            }
+        }
+
+        &-img {
+            width: 40%;
+            animation: ${animation} 5s ease infinite;
+
+            img {
+                width: 100%;
+            }
+
+            @media (max-width: ${constants.MEDIA_QUERIES.md}px) {
+                margin-top: 40px;
+            }
+
+            @media (max-width: ${constants.MEDIA_QUERIES.sm}px) {
+                width: 100%;
             }
         }
     }

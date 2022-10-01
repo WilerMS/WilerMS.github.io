@@ -1,4 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600&family=Roboto:wght@100;300;400&display=swap');
+@font-face {
+	font-family: Centra;
+	src: url('./static/font/CentraNo2-Bold.ttf');
+	font-weight: 700;
+}
+@font-face {
+	font-family: Centra;
+	src: url('./static/font/CentraNo2-Medium.ttf');
+	font-weight: 500;
+}
+@font-face {
+	font-family: Centra;
+	src: url('./static/font/CentraNo2-Book.ttf');
+	font-weight: 400;
+}
 
 *,
 *::before,
@@ -11,7 +25,7 @@
 
 html {
   width: 100%;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Centra', sans-serif !important;
   /* font-family: 'Roboto Flex', sans-serif; */
   font-size: 16px;
   scroll-behavior: smooth;

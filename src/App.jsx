@@ -11,13 +11,13 @@ const App = () => {
     <ContextThemeProvider>
       <ContextLanguageProvider>
         <RootWrapper>
+          <Navbar />
           {pages.map(({ Component, id }) => (
             <Component
               key={id}
               id={id}
             />
           ))}
-          <Navbar />
         </RootWrapper>
       </ContextLanguageProvider>
     </ContextThemeProvider>

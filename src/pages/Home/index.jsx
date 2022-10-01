@@ -4,6 +4,7 @@ import wallpaper from '@static/wallpaper.svg'
 import { useTranslation } from 'react-i18next'
 
 import Particles from '@components/Particles'
+import homeLogo from '@static/home_logo.svg'
 
 
 export const Home = ({ id }) => {
@@ -14,16 +15,13 @@ export const Home = ({ id }) => {
     <Styled.Wrapper id={id}>
       <div className='layout'>
         <div className="layout-title">
-          <h2>{t("Hello, I'm Wiler Mariñez")}</h2>
+          <h2>{t("Hello, I am Wiler!")}</h2>
           <span>{t('Software engineer specialized in Full Stack development')}</span>
+          <a href="#">MY RESUME</a>
         </div>
         <div className="layout-img">
-
+          <img src={homeLogo} alt="wallpaper" />
         </div>
-      </div>
-      <div className='wallpaper'>
-        <img src={wallpaper} alt="wallpaper" />
-        <Particles />
       </div>
     </Styled.Wrapper>
   )

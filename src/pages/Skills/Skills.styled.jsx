@@ -5,10 +5,11 @@ export const Wrapper = styled.div`
     width: 100%;
     min-height: calc(100vh - ${constants.DESKTOP_NAVBAR_HEIGHT});
     padding-top: calc(${constants.DESKTOP_NAVBAR_HEIGHT});
-    margin-bottom: 10px;
     display: flex;
     align-items: center;
     flex-direction: column;
+    position: relative;
+    margin-bottom: 100px;
 
     .layout {
         display: flex;
@@ -50,6 +51,27 @@ export const Wrapper = styled.div`
             @media (max-width: ${constants.MEDIA_QUERIES.md}px) {
             grid-template-columns: 1fr;
             }
+        }
+    }
+
+    .about {
+        width: 100%;
+        height: 250px;
+        max-width: ${constants.MAX_WIDTH};
+        background: ${props => props.theme.page_bg};
+        box-shadow: 0px -15px 7px -2px #0000000f;
+        border-radius: 100px 100px 0 0;
+        position: absolute;
+        top: -200px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+
+        h2 {
+            margin-top: 50px;
+            font-size: ${constants.FONT_SIZES.xxl};
         }
     }
 `
