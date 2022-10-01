@@ -1,7 +1,10 @@
 import React from 'react'
 import * as Styled from '@pages/Home/Home.styled'
 import wallpaper from '@static/wallpaper.svg'
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next'
+
+import Particles from '@components/Particles'
+
 
 export const Home = ({ id }) => {
 
@@ -20,6 +23,7 @@ export const Home = ({ id }) => {
       </div>
       <div className='wallpaper'>
         <img src={wallpaper} alt="wallpaper" />
+        <Particles />
       </div>
     </Styled.Wrapper>
   )

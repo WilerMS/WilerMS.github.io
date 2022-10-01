@@ -14,7 +14,7 @@ export const Wrapper = styled.div`
 
     .wallpaper {
         width: 70%;
-        max-width: 1350px;
+        max-width: 1000px;
         position: absolute;
         bottom: 0;
         display: flex;
@@ -25,7 +25,6 @@ export const Wrapper = styled.div`
 
         img {
             width: 100%;
-            max-width: 1350px;
         }
     }
 
