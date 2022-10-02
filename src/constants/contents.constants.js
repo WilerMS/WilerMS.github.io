@@ -17,10 +17,20 @@ import {
 
 export const pages = [
   { id: 'home', href: '#home', text: 'Home', Icon: RiHome2Line, Component: Home },
-  { id: 'skills', href: '#skills', text: 'Skills', Icon: RiTrophyLine, Component: Skills },
+  { id: 'about', href: '#about', text: 'About me', Icon: RiTrophyLine, Component: Skills },
   { id: 'qualification', href: '#qualification', text: 'Qualification', Icon: RiBookReadLine, Component: Home },
   { id: 'projects', href: '#projects', text: 'Projects', Icon: RiImageFill, Component: Home },
   { id: 'contact', href: '#contact', text: 'Contact', Icon: RiChat3Line, Component: Home },
+]
+
+export const astronauts = [
+  { img: require('@static/astronaut_1.svg').default },
+  { img: require('@static/astronaut_2.svg').default },
+  { img: require('@static/astronaut_3.svg').default },
+  { img: require('@static/astronaut_4.svg').default },
+  { img: require('@static/astronaut_5.svg').default },
+  { img: require('@static/astronaut_6.svg').default },
+  { img: require('@static/astronaut_7.svg').default },
 ]
 
 export const skills = [
@@ -48,6 +58,17 @@ export const skills = [
   },
 ]
 
+export const companies = [
+  { name: 'SICE', bg: '', img: '' },
+  { name: 'ALTEN', bg: '', img: '' },
+  { name: 'KEEDIO', bg: '', img: '' },
+  { name: 'TECH Friendly', bg: '', img: '' },
+  { name: 'CPA Quality Services', bg: '', img: '' },
+  { name: 'Mercedes', bg: '', img: '' },
+  { name: 'Computacenter', bg: '', img: '' },
+  { name: 'SEAT', bg: '', img: '' },
+]
+
 export const qualification = [
   {
     name: 'Education',
@@ -62,9 +83,9 @@ export const qualification = [
     name: 'Work',
     Icon: BiBuildingHouse,
     items: [
-      { title: 'Full Stack Engineer', company: 'SICE', description: 'My role is about building smart cities and Traffic engineering applications', dates: '2022'  },
-      { title: 'Full Stack Developer', company: 'TECH Friendly', description: 'My role was about building smart cities applications', dates: '2022'  },
-      { title: 'Full Stack Developer', company: 'CPA Quality Services', description: 'My role was about erp full stack development', dates: '2021 - 2022'  },
+      { title: 'Full Stack Engineer', company: 'SICE', description: 'My role is about building smart cities and Traffic engineering applications', dates: '2022' },
+      { title: 'Full Stack Developer', company: 'TECH Friendly', description: 'My role was about building smart cities applications', dates: '2022' },
+      { title: 'Full Stack Developer', company: 'CPA Quality Services', description: 'My role was about erp full stack development', dates: '2021 - 2022' },
     ],
   },
 ]

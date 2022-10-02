@@ -1,15 +1,23 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import * as Styled from '@pages/Home/Home.styled'
 import { useTranslation } from 'react-i18next'
 import TrackVisibility from 'react-on-screen'
 
 import Particles from '@components/Particles'
-import homeLogo from '@static/home_logo.svg'
+import { astronauts } from '@src/constants/contents.constants'
+import homelogo from '@static/home_logo.svg'
 
 
 export const Home = ({ id }) => {
 
   const { t } = useTranslation();
+  const [astronaut, setAstronaut] = useState(homelogo)
+
+  useEffect(() => {
+    const astronautIndex = Math.floor(Math.random() * 7.9)
+    const { img } = astronauts[astronautIndex]
+    setAstronaut(img)
+  }, [])
 
   return (
     <Styled.Wrapper id={id}>
@@ -26,10 +34,10 @@ export const Home = ({ id }) => {
         <div className="layout-img">
           <TrackVisibility>
             {({ isVisible }) => <>
-              <img className={isVisible ? 'in' : 'out'} src={homeLogo} alt="wallpaper" />
+              <img className={isVisible ? 'in' : 'out'} src={astronaut} alt="wallpaper" />
             </>}
           </TrackVisibility>
-          
+
         </div>
       </div>
       <Particles />
