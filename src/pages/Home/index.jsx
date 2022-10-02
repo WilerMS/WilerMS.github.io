@@ -15,8 +15,8 @@ export const Home = ({ id }) => {
 
   useEffect(() => {
     const astronautIndex = Math.floor(Math.random() * 7.9)
-    const { img } = astronauts[astronautIndex]
-    setAstronaut(img)
+    const img = astronauts[astronautIndex]?.img
+    setAstronaut(img || homelogo)
   }, [])
 
   return (
