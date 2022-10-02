@@ -3,9 +3,8 @@ import useWindowsDimensions from '@hooks/useWindowsDimensions'
 import { MEDIA_QUERIES } from '@src/constants/styles.constants'
 import * as Desktop from '@components/Navbar/desktop.styled'
 import * as Mobile from '@components/Navbar/mobile.styled'
-import ThemeToggler from '@components/ThemeToggler'
+/* import ThemeToggler from '@components/ThemeToggler' */
 import LangToggler from '@components/LangToggler'
-import logo from '@static/logo.svg'
 
 import { FaRegTimesCircle } from 'react-icons/fa'
 import { HiMenu } from 'react-icons/hi'
@@ -13,8 +12,6 @@ import { pages } from '@src/constants/contents.constants'
 import { useTranslation } from 'react-i18next'
 
 const DeskTopNavbar = () => {
-
-  console.log({logo})
 
   const { t } = useTranslation()
   const [scrolled, setScrolled] = useState(false)
@@ -49,7 +46,7 @@ const DeskTopNavbar = () => {
               {t(text)}
             </Desktop.NavItem>
           ))}
-          <ThemeToggler />
+          {/* <ThemeToggler /> */}
           <LangToggler />
         </nav>
       </Desktop.Navbar>
@@ -69,7 +66,7 @@ const MobileNavbar = () => {
           <Mobile.NavLogo href='#home'>Wiler Mariñez</Mobile.NavLogo>
         </div>
         <nav className='navbar-items'>
-          <ThemeToggler />
+          {/* <ThemeToggler /> */}
           <Mobile.NavMenu
             onClick={() => setIsExpanded(true)}
           >
