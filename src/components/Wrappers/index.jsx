@@ -10,12 +10,14 @@ export const RootWrapper = styled.div`
     }
 
     .out {
+        transform: translateY(-40px);
         opacity: 0;
         transition: opacity 1s ease;
     }
 
     .in {
+        transform: translateY(0);
         opacity: 1;
-        transition: opacity 1s ease;
+        transition: opacity 1s ease, transform 2s ease;
     }
 `
