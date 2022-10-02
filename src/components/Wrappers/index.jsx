@@ -8,4 +8,14 @@ export const RootWrapper = styled.div`
     * {
         color: ${props => props.theme.page_text_color};
     }
+
+    .out {
+        opacity: 0;
+        transition: opacity 1s ease;
+    }
+
+    .in {
+        opacity: 1;
+        transition: opacity 1s ease;
+    }
 `

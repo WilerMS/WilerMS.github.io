@@ -35,6 +35,7 @@ export const Wrapper = styled.div`
         max-width: ${constants.MAX_WIDTH};
         height: 50vh;
         margin-bottom: 200px;
+        z-index: 3;
 
         @media (max-width: ${constants.MEDIA_QUERIES.md}px) {
             width: ${constants.WRAPPER_WIDTHS.sm};
@@ -44,10 +45,15 @@ export const Wrapper = styled.div`
         &-title {
             width: 60%;
             text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 10px;
+            
+
+            > div {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
             
             h2 {
                 font-size: 5rem;
@@ -68,12 +74,14 @@ export const Wrapper = styled.div`
                 border: 1px solid hsla(0,0%,100%,.2);
                 border-radius: 2px;
                 transition: background .5s ease;
+                text-transform: uppercase;
                 color: white;
 
                 &:hover {
                     background: linear-gradient(90.21deg,#8b2b655b -5.91%,#301f7d57 111.58%);
                 }
             }
+
         }
 
         &-img {
@@ -89,7 +97,7 @@ export const Wrapper = styled.div`
             }
 
             @media (max-width: ${constants.MEDIA_QUERIES.sm}px) {
-                width: 100%;
+                img { display: none;}
             }
         }
     }

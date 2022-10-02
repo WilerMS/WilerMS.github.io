@@ -1,11 +1,7 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import Particles from "react-tsparticles"
 import { loadFull } from "tsparticles"
 import styled from 'styled-components'
-
-import postgresql from '@static/postgresql.svg'
-import react from '@static/react.svg'
-import nodejs from '@static/nodejs.svg'
 
 const ParticlesJS = styled(Particles)`
   width: 100%;
@@ -36,86 +32,68 @@ const _Particles = () => {
       loaded={loadedParticles}
       canvasClassName='canvas'
       params={{
-        particles: {
-          number: {
-            value: 15,
-            density: {
-              enable: true,
-              value_area: 1500
+        "particles": {
+          "number": {
+            "value": 20,
+            "density": {
+              "enable": true,
+              "value_area": 1000
             }
           },
-          shape: {
-            type: "image",
-            stroke: {
-              width: 0,
-              color: "#000000"
+          "color": {
+            "value": "#ffffff"
+          },
+          "shape": {
+            "type": "circle",
+            "stroke": {
+              "width": 0,
+              "color": "#000000"
             },
-            image: [
-              {
-                "src": postgresql,
-                "height": 23,
-                "width": 23
-              },
-              {
-                "src": react,
-                "height": 23,
-                "width": 23
-              },
-              {
-                "src": nodejs,
-                "height": 23,
-                "width": 23
-              },
-            ]
-          },
-          opacity: {
-            value: 0.4,
-            random: true,
-            anim: {
-              enable: true,
-              speed: 1,
-              opacity_min: 0.1,
-              sync: false
+            "polygon": {
+              "nb_sides": 5
+            },
+            "image": {
+              "src": "img/github.svg",
+              "width": 100,
+              "height": 100
             }
           },
-          size: {
-            value: 50,
-            random: true,
-            anim: {
-              enable: true,
-              speed: 2,
-              size_min:0,
-              sync: false
+          "opacity": {
+            "value": 1,
+            "random": true,
+            "anim": {
+              "enable": true,
+              "speed": 1,
+              "opacity_min": 0,
+              "sync": false
             }
           },
-          move: {
-            enable: true,
-            speed: 1,
-            direction: "top",
-            random: false,
-            straight: false,
-            out_mode: "out",
-            bounce: false,
-            attract: {
-              enable: false,
-              rotateX: 600,
-              rotateY: 1200
+          "size": {
+            "value": 3,
+            "random": true,
+            "anim": {
+              "enable": false,
+              "speed": 4,
+              "size_min": 0.3,
+              "sync": false
+            }
+          },
+          "move": {
+            "enable": true,
+            "speed": 1,
+            "direction": "none",
+            "random": true,
+            "straight": false,
+            "out_mode": "out",
+            "bounce": false,
+            "attract": {
+              "enable": false,
+              "rotateX": 600,
+              "rotateY": 600
             }
           }
         },
-        interactivity: {
-          detect_on: "canvas",
-          events: {
-            onhover: {
-              enable: false
-            },
-            onclick: {
-              enable: false
-            },
-            resize: true
-          }
-        },
-        retina_detect: true
+        "retina_detect": true
       }}
     />
   )
