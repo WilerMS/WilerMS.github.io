@@ -25,7 +25,10 @@ export const Home = ({ id }) => {
         <div className="layout-title">
           <TrackVisibility>
             {({ isVisible }) => <>
-              <h2 className={isVisible ? 'in' : 'out'}>{t("Hello, I am Wiler!")}</h2>
+              <h2 className={isVisible ? 'in' : 'out'}>
+                {t("Hello, I am Wiler!")}
+                <div className='hi'>👋</div>
+              </h2>
               <span className={isVisible ? 'in' : 'out'}>{t('Software engineer specialized in Full Stack development')}</span>
               <a href="#ed" className={isVisible ? 'in' : 'out'}>{t('Mi CV')}</a>
             </>}
