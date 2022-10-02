@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/personal-webpage/static/css/main.37dd486b.css",
+    "main.js": "/personal-webpage/static/js/main.802ec1ea.js",
+    "static/media/bg_light.jpg": "/personal-webpage/static/media/bg_light.4e7bbbbf494151b959a7.jpg",
+    "static/media/bg_dark.png": "/personal-webpage/static/media/bg_dark.cc1273af450504afe755.png",
+    "static/media/home_logo.svg": "/personal-webpage/static/media/home_logo.400baa4260daac98f2b2b1ccf08761c2.svg",
+    "static/media/CentraNo2-Bold.ttf": "/personal-webpage/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
+    "static/media/CentraNo2-Medium.ttf": "/personal-webpage/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
+    "static/media/CentraNo2-Book.ttf": "/personal-webpage/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
+    "static/media/postgresql.svg": "/personal-webpage/static/media/postgresql.ae92b576b8ea41666538c0756df27969.svg",
+    "static/media/docker.svg": "/personal-webpage/static/media/docker.6bb1662524c859919b714a5902e8b8ce.svg",
+    "static/media/mysql.svg": "/personal-webpage/static/media/mysql.0697e026464104aea8919845703174b9.svg",
+    "static/media/react.svg": "/personal-webpage/static/media/react.e68b35f4774979ae220b1d5d7b345b00.svg",
+    "static/media/nodejs.svg": "/personal-webpage/static/media/nodejs.d39adae080cb59077b8c3a842bfd959c.svg",
+    "static/media/photoshop.svg": "/personal-webpage/static/media/photoshop.2b2f2e168dcc5d7031fdfbb52c664c37.svg",
+    "static/media/php.svg": "/personal-webpage/static/media/php.7c41b19923da57634a76372016ed129e.svg",
+    "static/media/typescript.svg": "/personal-webpage/static/media/typescript.a6305a733dd55243980aec55f96f70c5.svg",
+    "index.html": "/personal-webpage/index.html",
+    "static/media/en.svg": "/personal-webpage/static/media/en.5aa2f382eb186965d0d01427f2b1c608.svg",
+    "static/media/figma.svg": "/personal-webpage/static/media/figma.72ff35026c53ba574aef54c980db0e8d.svg",
+    "static/media/css.svg": "/personal-webpage/static/media/css.4e47c3122b8d2476a02f97dcfcb28640.svg",
+    "static/media/html.svg": "/personal-webpage/static/media/html.f318c8b1d5945fa9adc827ae94849cb1.svg",
+    "static/media/javascript.svg": "/personal-webpage/static/media/javascript.b879f838faf1cb951d1c2230fd933a39.svg",
+    "static/media/es.svg": "/personal-webpage/static/media/es.895b05866e99467543b323d61660f748.svg",
+    "main.37dd486b.css.map": "/personal-webpage/static/css/main.37dd486b.css.map",
+    "main.802ec1ea.js.map": "/personal-webpage/static/js/main.802ec1ea.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.37dd486b.css",
+    "static/js/main.802ec1ea.js"
+  ]
+}
