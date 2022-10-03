@@ -1,13 +1,14 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import * as Styled from '@pages/Skills/Skills.styled'
 import { skills } from '@src/constants/contents.constants'
 import { useTranslation } from 'react-i18next'
 
+import profile from '@static/profile_1.jpg'
+import Social from '@src/components/Social'
+
 const SkillPanel = ({ skills }) => {
 
   const { t } = useTranslation();
-
-  console.log({ skills })
 
   return (
     <Styled.SkillsPanelContainer>
@@ -33,15 +34,35 @@ const SkillPanel = ({ skills }) => {
 
 export const Skills = ({ id }) => {
 
-  const { t } = useTranslation();
+  const { t } = useTranslation()
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 320)
+    window.addEventListener("scroll", onScroll)
+    return () => window.removeEventListener("scroll", onScroll)
+  }, [])
+
 
   return (
     <Styled.Wrapper id={id}>
-      <div className="about">
-        <h2>About me</h2>
+      <div className={`about ${scrolled ? 'active' : ''}`}>
+        <h2>{t('About me')}</h2>
       </div>
       <div className="layout">
-        <div className='layout-header'>
+        <Styled.Me>
+          <div className="me-img">
+            <img src={profile} alt="" />
+          </div>
+          <div className="me-content">
+            <h2>I am Wiler Mariñez, a software engineer especialized in fullstack development.</h2>
+            <span>I'm a young pasionate about new technologies based in Madrid (Spain).</span>
+            <span>Desde niño siempre he sido curioso, lo que me llevó a aprender sobre bastantes areas. Entre ellas producción y edición de música y audio, diseño gráfico, retoque fotográfico y edición de vídeo a nivel profesional.</span>
+            <span>Hace 5 años me embarqué en el mundo de la programación, quedando encantado y haciendolo mi profesión y mi estilo de vida.</span>
+            <Social />
+          </div>
+        </Styled.Me>
+        {/* <div className='layout-header'>
           <h1>{t('Skills')}</h1>
           <span>{t('My favourite skills')}</span>
         </div>
@@ -49,7 +70,7 @@ export const Skills = ({ id }) => {
           {skills.map(type => (
             <SkillPanel key={type.name} skills={type} />
           ))}
-        </div>
+        </div> */}
       </div>
     </Styled.Wrapper>
   )

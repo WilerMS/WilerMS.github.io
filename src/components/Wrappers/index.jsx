@@ -5,7 +5,7 @@ export const RootWrapper = styled.div`
     transition: ${props => props.theme.transition};
     width: 100%;
 
-    * {
+    a, svg, p, h1, h2, h3, h4, h5, span {
         color: ${props => props.theme.page_text_color};
     }
 

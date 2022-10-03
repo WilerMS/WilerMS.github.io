@@ -4,7 +4,7 @@ import * as constants from '@src/constants/styles.constants'
 export const Wrapper = styled.div`
     width: 100%;
     min-height: calc(100vh - ${constants.DESKTOP_NAVBAR_HEIGHT});
-    padding-top: calc(${constants.DESKTOP_NAVBAR_HEIGHT});
+    padding-top: calc(${constants.DESKTOP_NAVBAR_HEIGHT} + 130px);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -58,11 +58,12 @@ export const Wrapper = styled.div`
         width: 100%;
         height: 250px;
         max-width: ${constants.MAX_WIDTH};
+        width: ${constants.WRAPPER_WIDTHS.lg};
         background: ${props => props.theme.page_bg};
         box-shadow: 0px -15px 7px -2px #0000000f;
         border-radius: 100px 100px 0 0;
         position: absolute;
-        top: -200px;
+        top: -190px;
 
         display: flex;
         flex-direction: column;
@@ -72,6 +73,17 @@ export const Wrapper = styled.div`
         h2 {
             margin-top: 50px;
             font-size: ${constants.FONT_SIZES.xxl};
+            transition: margin .5s ease;
+        }
+
+        &.active {
+            h2 {
+                margin-top: 300px;
+            }
+        }
+
+        @media (max-width: ${constants.MEDIA_QUERIES.sm}px) {
+            display: none;
         }
     }
 `
@@ -122,6 +134,58 @@ export const SkillItem = styled.div`
             flex-direction: column;
             align-items: center;
             padding-top: 5px;
+        }
+    }
+`
+
+export const Me = styled.div`
+    background: none;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+    @media (max-width: ${constants.MEDIA_QUERIES.md}px) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .me {
+        &-content {
+            height: 100%;
+            width: calc(95% - 400px);
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            @media (max-width: ${constants.MEDIA_QUERIES.md}px) {
+                width: 100%;
+                text-align: center;
+            }   
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            span {
+                font-size: 1.1rem;
+                text-align: justify;
+            }
+
+        }
+        &-img {
+            width: 400px;
+            height: 400px;
+            overflow: hidden;
+            border-radius: 20%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: 50% 40%;
+            }
+
         }
     }
 `
