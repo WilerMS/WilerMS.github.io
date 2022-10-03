@@ -55,10 +55,10 @@ export const Skills = ({ id }) => {
             <img src={profile} alt="" />
           </div>
           <div className="me-content">
-            <h2>I am Wiler Mariñez, a software engineer especialized in fullstack development.</h2>
-            <span>I'm a young pasionate about new technologies based in Madrid (Spain).</span>
-            <span>Desde niño siempre he sido curioso, lo que me llevó a aprender sobre bastantes areas. Entre ellas producción y edición de música y audio, diseño gráfico, retoque fotográfico y edición de vídeo a nivel profesional.</span>
-            <span>Hace 5 años me embarqué en el mundo de la programación, quedando encantado y haciendolo mi profesión y mi estilo de vida.</span>
+            <h2>{t("I am Wiler Mariñez, a software engineer especialized in fullstack development")}.</h2>
+            <span>{t("I'm a young pasionate about new technologies based in Madrid (Spain).")}</span>
+            <span>{t('since a child')}</span>
+            <span>{t('about me 4')}</span>
             <Social />
           </div>
         </Styled.Me>

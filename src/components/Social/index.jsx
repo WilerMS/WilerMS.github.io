@@ -15,7 +15,7 @@ const Link = styled.a`
     width: 50px;
     height: 50px;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     text-decoration: none;
     border-radius: 50%;
