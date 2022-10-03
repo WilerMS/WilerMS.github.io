@@ -5,7 +5,7 @@ import TrackVisibility from 'react-on-screen'
 
 import Particles from '@components/Particles'
 import { astronauts } from '@src/constants/contents.constants'
-import homelogo from '@static/home_logo.svg'
+import homelogo from '@static/astronaut_1.svg'
 
 
 export const Home = ({ id }) => {

@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import * as Styled from '@pages/Skills/Skills.styled'
-import { skills } from '@src/constants/contents.constants'
+import * as Styled from '@pages/About/Skills.styled'
+import { skills, companies } from '@src/constants/contents.constants'
 import { useTranslation } from 'react-i18next'
+import Tabs from '@components/Tabs'
 
 import profile from '@static/profile_1.jpg'
 import Social from '@src/components/Social'
@@ -32,7 +33,40 @@ const SkillPanel = ({ skills }) => {
   )
 }
 
-export const Skills = ({ id }) => {
+const Skills = () => {
+
+  const { t } = useTranslation()
+  return (
+    <>
+      <div className='layout-header'>
+        <span>{t('Theese are some of my favourite skills')}</span>
+      </div>
+      <div className='layout-content'>
+        {skills.map(type => (
+          <SkillPanel key={type.name} skills={type} />
+        ))}
+      </div>
+    </>
+  )
+}
+
+const Colaborations = () => {
+
+  const { t } = useTranslation()
+
+  return (
+    <>
+      <div className='layout-header'>
+        <span>{t("I'm proud about have been fortunated to collaborate with some awesome companies which taught me a lot of thigs")}</span>
+      </div>
+      <div className='layout-content'>
+      </div>
+    </>
+  )
+
+}
+
+export const About = ({ id }) => {
 
   const { t } = useTranslation()
   const [scrolled, setScrolled] = useState(false)
@@ -43,6 +77,12 @@ export const Skills = ({ id }) => {
     return () => window.removeEventListener("scroll", onScroll)
   }, [])
 
+  const tabs = [
+    { name: t('Work experience'), Component: Skills },
+    { name: t('Education'), Component: Skills },
+    { name: t('Skills'), Component: Skills },
+    { name: t('Collaborations'), Component: Colaborations },
+  ]
 
   return (
     <Styled.Wrapper id={id}>
@@ -62,15 +102,7 @@ export const Skills = ({ id }) => {
             <Social />
           </div>
         </Styled.Me>
-        {/* <div className='layout-header'>
-          <h1>{t('Skills')}</h1>
-          <span>{t('My favourite skills')}</span>
-        </div>
-        <div className='layout-content'>
-          {skills.map(type => (
-            <SkillPanel key={type.name} skills={type} />
-          ))}
-        </div> */}
+        <Tabs tabs={tabs} />
       </div>
     </Styled.Wrapper>
   )

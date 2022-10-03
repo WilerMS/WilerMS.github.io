@@ -14,6 +14,7 @@ export const Wrapper = styled.div`
     .layout {
         display: flex;
         flex-direction: column;
+        gap: 20px;
         align-items: center;
         width: ${constants.WRAPPER_WIDTHS.lg};
         max-width: ${constants.MAX_WIDTH};
@@ -26,14 +27,10 @@ export const Wrapper = styled.div`
             width: 100%;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            margin: 100px 0 40px 0;
-
-            h1 {
-                font-size: ${constants.FONT_SIZES.xxl};
-            }
+            margin-top: 30px;
 
             span {
+                font-size: 1.1.rem;
                 color: ${props => props.theme.page_text_secondary_color}
             }
 
@@ -152,6 +149,7 @@ export const Me = styled.div`
 
     .me {
         &-content {
+            opacity: .95;
             height: 100%;
             width: calc(95% - 400px);
             display: flex;
