@@ -12,15 +12,16 @@ import {
 } from 'react-icons/bi'
 import {
   Home,
-  Skills
+  About,
+  Projects
 } from '@pages'
 
 export const pages = [
   { id: 'home', href: '#home', text: 'Home', Icon: RiHome2Line, Component: Home },
-  { id: 'about', href: '#about', text: 'About me', Icon: RiTrophyLine, Component: Skills },
-  { id: 'qualification', href: '#qualification', text: 'Qualification', Icon: RiBookReadLine, Component: Home },
-  { id: 'projects', href: '#projects', text: 'Projects', Icon: RiImageFill, Component: Home },
-  { id: 'contact', href: '#contact', text: 'Contact', Icon: RiChat3Line, Component: Home },
+  { id: 'about', href: '#about', text: 'About me', Icon: RiTrophyLine, Component: About },
+  /* { id: 'qualification', href: '#qualification', text: 'Qualification', Icon: RiBookReadLine, Component: About }, */
+  { id: 'projects', href: '#projects', text: 'Projects', Icon: RiImageFill, Component: Projects },
+  { id: 'contact', href: '#contact', text: 'Contact', Icon: RiChat3Line, Component: About },
 ]
 
 export const astronauts = [
@@ -42,7 +43,7 @@ export const skills = [
       { title: 'JavaScript', subtitle: 'Advanced', img: require('@static/javascript.svg').default },
       { title: 'React', subtitle: 'Intermediate', img: require('@static/react.svg').default },
       { title: 'Photoshop', subtitle: 'Intermediate', img: require('@static/photoshop.svg').default },
-      { title: 'Figma', subtitle: 'Basic', img: require('@static/figma.svg').default },
+      { title: 'SASS', subtitle: 'Intermediate', img: require('@static/sass.svg').default },
     ],
   },
   {
@@ -59,14 +60,14 @@ export const skills = [
 ]
 
 export const companies = [
-  { name: 'SICE', bg: '', img: '' },
-  { name: 'ALTEN', bg: '', img: '' },
-  { name: 'KEEDIO', bg: '', img: '' },
-  { name: 'TECH Friendly', bg: '', img: '' },
-  { name: 'CPA Quality Services', bg: '', img: '' },
-  { name: 'Mercedes', bg: '', img: '' },
-  { name: 'Computacenter', bg: '', img: '' },
-  { name: 'SEAT', bg: '', img: '' },
+  { name: 'SICE', bg: '', imag: require('@static/companies/sice.png') },
+  { name: 'ALTEN', bg: '', imag: require('@static/companies/alten.png') },
+  { name: 'KEEDIO', bg: '', imag: require('@static/companies/keedio.png') },
+  { name: 'TECH Friendly', bg: '', imag: require('@static/companies/techfriendly.png') },
+  { name: 'CPA Quality Services', bg: '', imag: require('@static/companies/cpa.png') },
+  { name: 'Mercedes', bg: '', imag: require('@static/companies/mercedes.png') },
+  { name: 'Computacenter', bg: '', imag: require('@static/companies/computacenter.png') },
+  { name: 'SEAT', bg: '', imag: require('@static/companies/seat.png') },
 ]
 
 export const qualification = [
