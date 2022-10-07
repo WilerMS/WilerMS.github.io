@@ -4,12 +4,16 @@ import * as constants from '@src/constants/styles.constants'
 export const Wrapper = styled.div`
     width: 100%;
     min-height: calc(100vh - ${constants.DESKTOP_NAVBAR_HEIGHT});
-    padding-top: calc(${constants.DESKTOP_NAVBAR_HEIGHT} + 130px);
+    padding-top: calc(${constants.DESKTOP_NAVBAR_HEIGHT} + 20px);
     display: flex;
     align-items: center;
     flex-direction: column;
     position: relative;
     margin-bottom: 100px;
+
+    @media (max-width: ${constants.MEDIA_QUERIES.sm}px) {
+        padding-top: 50px;
+    }
 
     .layout {
         display: flex;
@@ -75,7 +79,7 @@ export const Wrapper = styled.div`
 
         &.active {
             h2 {
-                margin-top: 300px;
+                margin-top: 200px;
             }
         }
 
@@ -137,7 +141,7 @@ export const SkillItem = styled.div`
 
 export const Me = styled.div`
     background: none;
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: center;
     gap: 40px;
@@ -162,20 +166,33 @@ export const Me = styled.div`
             }   
 
             h2 {
-                font-size: 2rem;
+                font-size: 1.39rem;
+
+                @media (max-width: ${constants.MEDIA_QUERIES.sm}px) {
+                    font-size: 1.2rem;
+                }  
             }
 
             span {
-                font-size: 1.1rem;
+                font-size: 1rem;
                 text-align: justify;
+
+                @media (max-width: ${constants.MEDIA_QUERIES.sm}px) {
+                    font-size: 1rem;
+                }
             }
 
         }
         &-img {
-            width: 400px;
-            height: 400px;
+            width: 300px;
+            height: 300px;
             overflow: hidden;
             border-radius: 20%;
+
+            @media (max-width: ${constants.MEDIA_QUERIES.sm}px) {
+                width: 300px;
+                height: 300px;
+            }  
 
             img {
                 width: 100%;

@@ -3,12 +3,18 @@ import styled from 'styled-components'
 
 import { FaYoutube, FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa'
 
+import * as constants from '@src/constants/styles.constants'
+
 const Container = styled.div`
     width: 100%;
     height: 80px;
     display: flex;
     gap: 30px;
     align-items: center;
+
+    @media (max-width: ${constants.MEDIA_QUERIES.sm}px) {
+        justify-content: space-between;
+    } 
 `
 
 const Link = styled.a`

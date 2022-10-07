@@ -5,6 +5,10 @@ import { useTranslation } from 'react-i18next'
 import Tabs from '@components/Tabs'
 import Colaborations from '@src/components/Collaborations'
 
+import { MdWork } from 'react-icons/md'
+import { IoIosPeople, IoIosSchool } from 'react-icons/io'
+import {SiCodeforces} from 'react-icons/si'
+
 import profile from '@static/profile_1.jpg'
 import Social from '@src/components/Social'
 
@@ -63,10 +67,10 @@ export const About = ({ id }) => {
   }, [])
 
   const tabs = [
-    { name: t('Work experience'), Component: Colaborations },
-    { name: t('Education'), Component: Skills },
-    { name: t('Skills'), Component: Skills },
-    { name: t('Collaborations'), Component: Colaborations },
+    { name: t('Work experience'), Icon: MdWork, Component: Colaborations },
+    { name: t('Education'), Icon: IoIosSchool, Component: Skills },
+    { name: t('Skills'), Icon: SiCodeforces, Component: Skills },
+    { name: t('Collaborations'), Icon: IoIosPeople, Component: Colaborations },
   ]
 
   return (

@@ -8,7 +8,8 @@ export const Wrapper = styled.section`
   position: fixed;
   bottom: ${constants.MOBILE_NAVBAR.BOTTOM_SPACE};
   display: flex;
-  justify-content: center;
+  justify-content: end;
+  padding-right: calc(100vh * 0.025);
 
   * {
     -webkit-touch-callout:none;
@@ -24,7 +25,6 @@ export const Wrapper = styled.section`
 export const Navbar = styled.div`
   background: ${props => props.theme.navbar_bg};
   color: white;
-  width: 90%;
   max-width: ${constants.MOBILE_NAVBAR.MAX_WIDTH};
   height: ${constants.MOBILE_NAVBAR.HEIGHT};
   display: flex;
@@ -50,7 +50,6 @@ export const Navbar = styled.div`
 export const NavbarList = styled.div`
   z-index: 100;
   position: absolute;
-  width: 90%;
   background: ${props => props.theme.navbar_bg};
   height: ${ props => (
     props.isExpanded ? 
@@ -58,8 +57,9 @@ export const NavbarList = styled.div`
       :
       0
   )};
+  width: ${ props => ( props.isExpanded ? '90%' : 0 )};
   opacity: ${ props => props.isExpanded ? 1 : 0};
-  transition: height .3s ease, opacity .3s ease;
+  transition: height .3s ease, opacity .3s ease, width .3s ease;
   border-radius: ${constants.MOBILE_NAVBAR.RADIUS};
   bottom: 0;
   gap: 15px;
@@ -76,7 +76,7 @@ export const NavbarList = styled.div`
     height: calc(100% - 80px);
     padding: 20px 30px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 15px;
   }
 

@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import * as constants from '@src/constants/styles.constants'
 
 
 export const Wrapper = styled.div` 
@@ -18,6 +19,14 @@ export const Wrapper = styled.div`
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 30px;
+
+            @media (max-width: ${constants.MEDIA_QUERIES.md}px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @media (max-width: ${constants.MEDIA_QUERIES.sm}px) {
+                grid-template-columns: repeat(1, 1fr);
+            }
         }
 
 

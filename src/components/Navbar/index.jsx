@@ -62,11 +62,7 @@ const MobileNavbar = () => {
   return (
     <Mobile.Wrapper className='navbar-section'>
       <Mobile.Navbar className='navbar'>
-        <div className='navbar-logo'>
-          <Mobile.NavLogo href='#home'>Wiler Mariñez</Mobile.NavLogo>
-        </div>
         <nav className='navbar-items'>
-          {/* <ThemeToggler /> */}
           <Mobile.NavMenu
             onClick={() => setIsExpanded(true)}
           >

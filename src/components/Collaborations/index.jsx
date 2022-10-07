@@ -14,7 +14,6 @@ export const Colaborations = () => {
             </div>
             <div className='collaborations-content'>
                 {companies.map(company => (
-
                     <Styled.Company
                         key={company.name}
                         color={company.bg}
