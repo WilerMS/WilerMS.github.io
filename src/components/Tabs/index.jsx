@@ -7,8 +7,12 @@ import * as constants from '@src/constants/styles.constants'
 
 const TabsContainer = styled(Tabs)`
     margin-top: 50px;
-    width: 100%;
+    width: 90%;
     color: white;
+
+    @media (max-width: ${constants.MEDIA_QUERIES.sm}px) {
+        width: 100%;
+    }  
 
     .active {
         &::after {
