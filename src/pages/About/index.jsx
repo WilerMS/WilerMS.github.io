@@ -3,6 +3,7 @@ import * as Styled from '@pages/About/Skills.styled'
 import { skills, companies } from '@src/constants/contents.constants'
 import { useTranslation } from 'react-i18next'
 import Tabs from '@components/Tabs'
+import Colaborations from '@src/components/Collaborations'
 
 import profile from '@static/profile_1.jpg'
 import Social from '@src/components/Social'
@@ -39,7 +40,7 @@ const Skills = () => {
   return (
     <>
       <div className='layout-header'>
-        <span>{t('Theese are some of my favourite skills')}</span>
+        <span>{t('These are some of my favourite skills')}</span>
       </div>
       <div className='layout-content'>
         {skills.map(type => (
@@ -48,22 +49,6 @@ const Skills = () => {
       </div>
     </>
   )
-}
-
-const Colaborations = () => {
-
-  const { t } = useTranslation()
-
-  return (
-    <>
-      <div className='layout-header'>
-        <span>{t("I'm proud about have been fortunated to collaborate with some awesome companies which taught me a lot of thigs")}</span>
-      </div>
-      <div className='layout-content'>
-      </div>
-    </>
-  )
-
 }
 
 export const About = ({ id }) => {
@@ -78,7 +63,7 @@ export const About = ({ id }) => {
   }, [])
 
   const tabs = [
-    { name: t('Work experience'), Component: Skills },
+    { name: t('Work experience'), Component: Colaborations },
     { name: t('Education'), Component: Skills },
     { name: t('Skills'), Component: Skills },
     { name: t('Collaborations'), Component: Colaborations },

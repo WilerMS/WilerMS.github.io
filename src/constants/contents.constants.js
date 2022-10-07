@@ -60,14 +60,14 @@ export const skills = [
 ]
 
 export const companies = [
-  { name: 'SICE', bg: '', imag: require('@static/companies/sice.png') },
-  { name: 'ALTEN', bg: '', imag: require('@static/companies/alten.png') },
-  { name: 'KEEDIO', bg: '', imag: require('@static/companies/keedio.png') },
-  { name: 'TECH Friendly', bg: '', imag: require('@static/companies/techfriendly.png') },
-  { name: 'CPA Quality Services', bg: '', imag: require('@static/companies/cpa.png') },
-  { name: 'Mercedes', bg: '', imag: require('@static/companies/mercedes.png') },
-  { name: 'Computacenter', bg: '', imag: require('@static/companies/computacenter.png') },
-  { name: 'SEAT', bg: '', imag: require('@static/companies/seat.png') },
+  { name: 'SICE', bg: 'linear-gradient(90deg, rgba(22,238,201,1) 0%, rgba(0,236,255,1) 100%)', img: require('@static/companies/sice.png'), },
+  { name: 'Mercedes', bg: 'linear-gradient(90deg, rgba(161,184,175,1) 0%, rgba(70,88,85,1) 100%)', img: require('@static/companies/mercedes.png'), },
+  { name: 'ALTEN', bg: 'linear-gradient(90deg, rgba(237,80,28,1) 0%, rgba(254,157,0,1) 100%)', img: require('@static/companies/alten.png'), },
+  { name: 'SEAT', bg: 'linear-gradient(90deg, rgba(205,226,218,1) 0%, rgba(116,131,129,1) 100%)', img: require('@static/companies/seat.png'), },
+  { name: 'KEEDIO', bg: 'linear-gradient(90deg, rgba(0,135,160,1) 0%, rgba(49,46,92,1) 100%)', img: require('@static/companies/keedio.png'), },
+  { name: 'TECH Friendly', bg: 'linear-gradient(90deg, rgba(0,202,255,1) 0%, rgba(0,255,218,1) 100%)', img: require('@static/companies/techfriendly.png'), },
+  { name: 'CPA Quality Services', bg: 'linear-gradient(90deg, rgba(105,217,131,1) 0%, rgba(26,134,76,1) 100%)', img: require('@static/companies/cpa.png'), },
+  { name: 'Computacenter', bg: 'linear-gradient(90deg, rgba(132,243,245,1) 0%, rgba(58,186,252,1) 100%)', img: require('@static/companies/computacenter.png'), },
 ]
 
 export const qualification = [
