@@ -36,8 +36,8 @@ const _Tabs = ({ tabs }) => (
             ))}
         </TabList>
 
-        {tabs.map(({ Component }) => (
-            <TabPanel>
+        {tabs.map(({ Component }, index) => (
+            <TabPanel key={index}>
                 <Component />
             </TabPanel>
         ))}
