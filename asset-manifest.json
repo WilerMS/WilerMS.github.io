@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.381ccb40.css",
-    "main.js": "/static/js/main.f0165e01.js",
+    "main.js": "/static/js/main.3d316ff2.js",
     "static/media/bg_light.jpg": "/static/media/bg_light.4e7bbbbf494151b959a7.jpg",
     "static/media/profile_1.jpg": "/static/media/profile_1.e45feb7fad4248fa5b83.jpg",
     "static/media/mercedes.png": "/static/media/mercedes.535c66b0401e99b98aa9.png",
@@ -38,10 +38,10 @@
     "static/media/javascript.svg": "/static/media/javascript.b879f838faf1cb951d1c2230fd933a39.svg",
     "static/media/es.svg": "/static/media/es.895b05866e99467543b323d61660f748.svg",
     "main.381ccb40.css.map": "/static/css/main.381ccb40.css.map",
-    "main.f0165e01.js.map": "/static/js/main.f0165e01.js.map"
+    "main.3d316ff2.js.map": "/static/js/main.3d316ff2.js.map"
   },
   "entrypoints": [
     "static/css/main.381ccb40.css",
-    "static/js/main.f0165e01.js"
+    "static/js/main.3d316ff2.js"
   ]
 }
