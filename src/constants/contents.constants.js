@@ -13,7 +13,8 @@ import {
 import {
   Home,
   About,
-  Projects
+  Projects,
+  Contact,
 } from '@pages'
 
 export const pages = [
@@ -21,7 +22,7 @@ export const pages = [
   { id: 'about', href: '#about', text: 'About me', Icon: RiTrophyLine, Component: About },
   /* { id: 'qualification', href: '#qualification', text: 'Qualification', Icon: RiBookReadLine, Component: About }, */
   { id: 'projects', href: '#projects', text: 'Projects', Icon: RiImageFill, Component: Projects },
-  { id: 'contact', href: '#contact', text: 'Contact', Icon: RiChat3Line, Component: About },
+  { id: 'contact', href: '#contact', text: 'Contact', Icon: RiChat3Line, Component: Contact },
 ]
 
 export const astronauts = [

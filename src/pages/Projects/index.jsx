@@ -6,6 +6,8 @@ export const Projects = ({id}) => {
         style={{
             height: '120vh'
         }}
-    >Projects</div>
+    >
+      <span>Projects</span>
+    </div>
   )
 }

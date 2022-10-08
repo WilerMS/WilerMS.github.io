@@ -1,59 +1,18 @@
 import React, { useEffect, useState } from 'react'
-import * as Styled from '@pages/About/Skills.styled'
-import { skills, companies } from '@src/constants/contents.constants'
+import * as Styled from '@src/pages/About/About.styled'
 import { useTranslation } from 'react-i18next'
 import Tabs from '@components/Tabs'
-import Colaborations from '@src/components/Collaborations'
+import Colaborations from '@components/Collaborations'
+import WorkExperience from '@components/WorkExperience'
+
+import { Skills } from '@components/Skills'
 
 import { MdWork } from 'react-icons/md'
 import { IoIosPeople, IoIosSchool } from 'react-icons/io'
-import {SiCodeforces} from 'react-icons/si'
+import { SiCodeforces } from 'react-icons/si'
 
 import profile from '@static/profile_1.jpg'
 import Social from '@src/components/Social'
-
-const SkillPanel = ({ skills }) => {
-
-  const { t } = useTranslation();
-
-  return (
-    <Styled.SkillsPanelContainer>
-      <div className='skills-panel-header'>
-        <h2>{t(skills.name)}</h2>
-      </div>
-      <div className='skills-panel-body'>
-        {skills.items.map(item => (
-          <Styled.SkillItem key={item.title}>
-            <div className='skills-item-icon'>
-              <img src={item.img} alt={item.title} />
-            </div>
-            <div className='skills-item-title'>
-              <h3>{item.title}</h3>
-              <span>{t(item.subtitle)}</span>
-            </div>
-          </Styled.SkillItem>
-        ))}
-      </div>
-    </Styled.SkillsPanelContainer>
-  )
-}
-
-const Skills = () => {
-
-  const { t } = useTranslation()
-  return (
-    <>
-      <div className='layout-header'>
-        <span>{t('These are some of my favourite skills')}</span>
-      </div>
-      <div className='layout-content'>
-        {skills.map(type => (
-          <SkillPanel key={type.name} skills={type} />
-        ))}
-      </div>
-    </>
-  )
-}
 
 export const About = ({ id }) => {
 
@@ -67,7 +26,7 @@ export const About = ({ id }) => {
   }, [])
 
   const tabs = [
-    { name: t('Work experience'), Icon: MdWork, Component: Colaborations },
+    { name: t('Work experience'), Icon: MdWork, Component: WorkExperience },
     { name: t('Education'), Icon: IoIosSchool, Component: Skills },
     { name: t('Skills'), Icon: SiCodeforces, Component: Skills },
     { name: t('Collaborations'), Icon: IoIosPeople, Component: Colaborations },
