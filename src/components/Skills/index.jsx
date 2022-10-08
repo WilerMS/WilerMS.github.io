@@ -33,15 +33,15 @@ export const Skills = () => {
 
     const { t } = useTranslation()
     return (
-        <>
-            <div className='layout-header'>
+        <Styled.Wrapper>
+            <div className='skills-header'>
                 <span>{t('These are some of my favourite skills')}</span>
             </div>
-            <div className='layout-content'>
+            <div className='skills-content'>
                 {skills.map(type => (
                     <SkillPanel key={type.name} skills={type} />
                 ))}
             </div>
-        </>
+        </Styled.Wrapper>
     )
 }

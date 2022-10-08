@@ -26,33 +26,6 @@ export const Wrapper = styled.div`
         @media (max-width: ${constants.MEDIA_QUERIES.sm}px) {
             width: ${constants.WRAPPER_WIDTHS.sm};
         }
-
-        &-header {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            margin-top: 30px;
-
-            span {
-                font-size: 1.1.rem;
-                color: ${props => props.theme.page_text_secondary_color}
-            }
-
-            @media (max-width: ${constants.MEDIA_QUERIES.md}px) {
-                margin: 0px 0 40px 0;
-            }
-        }
-
-        &-content {
-            width: 100%;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 70px;
-
-            @media (max-width: ${constants.MEDIA_QUERIES.md}px) {
-            grid-template-columns: 1fr;
-            }
-        }
     }
 
     .about {
