@@ -30,9 +30,7 @@ const Education = () => {
               <div className="desription">{t(school)}</div>
               <div className="date">{t(dates)}</div>
             </Styled.EducationItem>
-
           ))}
-
         </Styled.EducationBox>
       </div>
     </Styled.Wrapper>

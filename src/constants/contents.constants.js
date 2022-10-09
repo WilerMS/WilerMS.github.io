@@ -78,7 +78,8 @@ export const certifications = [
 ]
 
 export const work = [
-  { title: 'Full Stack Engineer', company: 'SICE', description: 'My role is about building smart cities and Traffic engineering applications', dates: '2022' },
-  { title: 'Full Stack Developer', company: 'TECH Friendly', description: 'My role was about building smart cities applications', dates: '2022' },
-  { title: 'Full Stack Developer', company: 'CPA Quality Services', description: 'My role was about erp full stack development', dates: '2021 - 2022' },
+  { title: 'Smart city software engineer', company: 'SICE', description: 'My role is about building smart cities and Traffic engineering applications in which large amounts of data are shown taking care about security and performance.', dates: '2022' },
+  { title: 'Smart city oriented full stack Developer', company: 'TECH Friendly', description: 'My role was about building smart cities applications with big amounts of data with apis rest and charts', dates: '2022' },
+  { title: 'Full Stack Developer', company: 'CPA Quality Services', description: 'My role was about ERP full stack development. I was in charge to develop software to manage the company data.', dates: '2021 - 2022' },
+  { title: 'Computer systems technician', company: 'Computacenter Iberia', description: 'My role in this company was maintaining the computer systems equipment and solving second level issues.', dates: '2021 - 2022' },
 ]
