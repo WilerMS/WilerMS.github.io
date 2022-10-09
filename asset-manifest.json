@@ -1,14 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.381ccb40.css",
-    "main.js": "/static/js/main.08a99747.js",
+    "main.js": "/static/js/main.62b6c6e0.js",
     "static/media/bg_light.jpg": "/static/media/bg_light.4e7bbbbf494151b959a7.jpg",
     "static/media/profile_1.jpg": "/static/media/profile_1.e45feb7fad4248fa5b83.jpg",
-    "static/media/mercedes.png": "/static/media/mercedes.535c66b0401e99b98aa9.png",
     "static/media/astronaut_4.svg": "/static/media/astronaut_4.9da20cdb849a9a98b5d340f8ca282e13.svg",
-    "static/media/seat.png": "/static/media/seat.67604210e304d38e7c52.png",
     "static/media/bg_dark.png": "/static/media/bg_dark.cc1273af450504afe755.png",
-    "static/media/sice.png": "/static/media/sice.2dbefe178acac3f606eb.png",
     "static/media/astronaut_2.svg": "/static/media/astronaut_2.edc10e5e6eea0c31ba9365e4e235fd48.svg",
     "static/media/astronaut_5.svg": "/static/media/astronaut_5.1d01e21b621410161fe98fbd36510c68.svg",
     "static/media/astronaut_7.svg": "/static/media/astronaut_7.1453e370cbadc62d0864b5ef5352555f.svg",
@@ -17,11 +14,13 @@
     "static/media/CentraNo2-Bold.ttf": "/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
     "static/media/CentraNo2-Medium.ttf": "/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
     "static/media/CentraNo2-Book.ttf": "/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
-    "static/media/alten.png": "/static/media/alten.85a71fd4d9252dfedf89.png",
     "static/media/astronaut_6.svg": "/static/media/astronaut_6.a0d09f8b3302a9757917647b1a71f6b6.svg",
-    "static/media/computacenter.png": "/static/media/computacenter.bfbc79da71e56c452109.png",
-    "static/media/keedio.png": "/static/media/keedio.daca72808ca100216e6a.png",
+    "static/media/sice.png": "/static/media/sice.b0100236e7e212b0d987.png",
+    "static/media/mercedes.png": "/static/media/mercedes.85cbe040a9997e727d38.png",
+    "static/media/seat.png": "/static/media/seat.8343db4b58e9e1ea437f.png",
+    "static/media/computacenter.png": "/static/media/computacenter.c74b810acf453430f0cb.png",
     "static/media/techfriendly.png": "/static/media/techfriendly.cc13cc190b6df1c66044.png",
+    "static/media/alten.png": "/static/media/alten.337f8a0a1622280f9e5e.png",
     "static/media/postgresql.svg": "/static/media/postgresql.ae92b576b8ea41666538c0756df27969.svg",
     "static/media/docker.svg": "/static/media/docker.6bb1662524c859919b714a5902e8b8ce.svg",
     "static/media/mysql.svg": "/static/media/mysql.0697e026464104aea8919845703174b9.svg",
@@ -38,10 +37,10 @@
     "static/media/javascript.svg": "/static/media/javascript.b879f838faf1cb951d1c2230fd933a39.svg",
     "static/media/es.svg": "/static/media/es.895b05866e99467543b323d61660f748.svg",
     "main.381ccb40.css.map": "/static/css/main.381ccb40.css.map",
-    "main.08a99747.js.map": "/static/js/main.08a99747.js.map"
+    "main.62b6c6e0.js.map": "/static/js/main.62b6c6e0.js.map"
   },
   "entrypoints": [
     "static/css/main.381ccb40.css",
-    "static/js/main.08a99747.js"
+    "static/js/main.62b6c6e0.js"
   ]
 }
