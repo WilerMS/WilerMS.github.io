@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next'
 import Tabs from '@components/Tabs'
 import Colaborations from '@components/Collaborations'
 import WorkExperience from '@components/WorkExperience'
+import Education from '@components/Education'
 
 import { Skills } from '@components/Skills'
 
@@ -27,7 +28,7 @@ export const About = ({ id }) => {
 
   const tabs = [
     { name: t('Work experience'), Icon: MdWork, Component: WorkExperience },
-    { name: t('Education'), Icon: IoIosSchool, Component: Skills },
+    { name: t('Education'), Icon: IoIosSchool, Component: Education },
     { name: t('Skills'), Icon: SiCodeforces, Component: Skills },
     { name: t('Collaborations'), Icon: IoIosPeople, Component: Colaborations },
   ]

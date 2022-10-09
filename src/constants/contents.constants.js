@@ -1,15 +1,9 @@
 import {
   RiHome2Line,
   RiImageFill,
-  RiSuitcaseLine,
   RiChat3Line,
   RiTrophyLine,
-  RiBookReadLine,
-  RiPencilRuler2Line
 } from 'react-icons/ri'
-import {
-  BiBuildingHouse,
-} from 'react-icons/bi'
 import {
   Home,
   About,
@@ -71,23 +65,20 @@ export const companies = [
   { name: 'Computacenter', bg: 'linear-gradient(90deg, rgba(132,243,245,1) 0%, rgba(58,186,252,1) 100%)', img: require('@static/companies/computacenter.png'), },
 ]
 
-export const qualification = [
-  {
-    name: 'Education',
-    Icon: RiPencilRuler2Line,
-    items: [
-      { title: 'Computer Engineering', company: 'Basque Country University, Spain', description: "I'm studying computer science engineering oriented to information gestion and software development", dates: '2019 - 2023' },
-      { title: 'Computer Network System Administration', company: 'Egibide (Arriaga), Spain', description: 'I studied this career about computer administration.', dates: '2017 - 2019' },
-      { title: 'Web Development School', company: 'Platzi Academy', description: '', dates: '2017 - 2019' },
-    ],
-  },
-  {
-    name: 'Work',
-    Icon: BiBuildingHouse,
-    items: [
-      { title: 'Full Stack Engineer', company: 'SICE', description: 'My role is about building smart cities and Traffic engineering applications', dates: '2022' },
-      { title: 'Full Stack Developer', company: 'TECH Friendly', description: 'My role was about building smart cities applications', dates: '2022' },
-      { title: 'Full Stack Developer', company: 'CPA Quality Services', description: 'My role was about erp full stack development', dates: '2021 - 2022' },
-    ],
-  },
+export const education = [
+  { title: 'Computer engineering in management and information systems', school: 'Basque Country University, Spain',  dates: '2019 - 2023' },
+  { title: 'Computer Network System Administration', school: 'Egibide (Vitoria, Basque Country, Spain)', dates: '2017 - 2019' },
+  { title: 'Web Development School', school: 'Platzi Academy', dates: '2020 - 2021' },
+]
+
+export const certifications = [
+  { title: 'Frontend Dev in React and React Native Course', school: 'Udemy Alumni', dates: '2020' },
+  { title: 'Web development Certificate', school: 'Google Activate', dates: '2020' },
+  { title: 'English B2 certificate', school: 'Platzi Academy', dates: '2021' },
+]
+
+export const work = [
+  { title: 'Full Stack Engineer', company: 'SICE', description: 'My role is about building smart cities and Traffic engineering applications', dates: '2022' },
+  { title: 'Full Stack Developer', company: 'TECH Friendly', description: 'My role was about building smart cities applications', dates: '2022' },
+  { title: 'Full Stack Developer', company: 'CPA Quality Services', description: 'My role was about erp full stack development', dates: '2021 - 2022' },
 ]

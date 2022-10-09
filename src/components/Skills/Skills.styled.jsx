@@ -4,12 +4,9 @@ import * as constants from '@src/constants/styles.constants'
 export const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
     width: 100%;
-
-    @media (max-width: ${constants.MEDIA_QUERIES.sm}px) {
-        width: ${constants.WRAPPER_WIDTHS.sm};
-    }
 
     .skills-header {
         width: 100%;
@@ -34,7 +31,7 @@ export const Wrapper = styled.div`
         gap: 70px;
 
         @media (max-width: ${constants.MEDIA_QUERIES.md}px) {
-        grid-template-columns: 1fr;
+            grid-template-columns: 1fr;
         }
     }
 `

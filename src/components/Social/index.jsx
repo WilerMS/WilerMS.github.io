@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { FaYoutube, FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa'
+import { FaYoutube, FaTwitter, FaFacebookF } from 'react-icons/fa'
+import { RiLinkedinFill, RiInstagramFill } from 'react-icons/ri'
 
 import * as constants from '@src/constants/styles.constants'
 
@@ -41,19 +42,19 @@ const Social = () => {
     return (
         <Container>
             <Link href="google.com" color='#3498DB'>
-                <FaLinkedin />
+                <RiLinkedinFill />
             </Link>
             <Link href="google.com" color='#E74C3C'>
                 <FaYoutube />
             </Link>
             <Link href="google.com" color='#85C1E9 '>
-                <FaFacebook />
+                <FaFacebookF />
             </Link>
             <Link href="google.com" color='#3498DB'>
                 <FaTwitter />
             </Link>
             <Link href="google.com" color='#8E44AD'>
-                <FaInstagram />
+                <RiInstagramFill />
             </Link>
         </Container>
     )

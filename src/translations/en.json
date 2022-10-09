@@ -12,7 +12,7 @@
     "Contact": "Contact",
     "My favourite skills": "My favourite skills",
     "Experience & education": "Experience & education",
-    "Computer Engineering": "Computer Engineering",
+    "Computer engineering in management and information systems": "Computer engineering in management and information systems",
     "Computer Network System Administration": "Computer Network System Administration",
     "Web Development School": "Web Development School",
     "Hello, I am Wiler!": "Hello, I am Wiler!    ",
@@ -26,5 +26,8 @@
     "Work experience": "Work experience",
     "Education": "Education",
     "Collaborations": "Collaborations",
-    "I am proud to have had the opportunity to work side by side with developers and colleagues from these great companies. They teached me many things.": "I am proud to have had the opportunity to work side by side with developers and colleagues from these great companies. They teached me many things."
+    "I am proud to have had the opportunity to work side by side with developers and colleagues from these great companies. They teached me many things.": "I am proud to have had the opportunity to work side by side with developers and colleagues from these great companies. They teached me many things.",
+    "English B2 certificate": "English B2 certificate",
+    "Web development Certificate": "Web development Certificate",
+    "Frontend Dev in React and React Native Course": "Frontend Dev in React and React Native Course"
 }
