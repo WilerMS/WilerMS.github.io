@@ -15,7 +15,9 @@ const WorkExperience = () => {
       <div className='work-experience-content'>
         <Styled.WorkBox>
           {work.map(({ title, company, description,  dates }) => (
-            <Styled.WorkItem>
+            <Styled.WorkItem
+              key={title}
+            >
               <div className="title">{t(title)}</div>
               <div className="description">{t(company)}</div>
               <div className="sub-description">{t(description)}</div>
