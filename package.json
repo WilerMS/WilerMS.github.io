@@ -17,6 +17,7 @@
     "react-tabs": "^5.1.0",
     "react-tsparticles": "^2.3.2",
     "styled-components": "^5.3.6",
+    "sweetalert2": "^11.7.0",
     "tsparticles": "^2.3.2"
   },
   "scripts": {

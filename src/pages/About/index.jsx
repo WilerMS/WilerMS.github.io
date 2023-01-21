@@ -21,7 +21,7 @@ export const About = ({ id }) => {
   const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 320)
+    const onScroll = () => setScrolled(window.scrollY > 550)
     window.addEventListener("scroll", onScroll)
     return () => window.removeEventListener("scroll", onScroll)
   }, [])
@@ -34,11 +34,9 @@ export const About = ({ id }) => {
   ]
 
   return (
-    <Styled.Wrapper id={id}>
+    <Styled.Wrapper className={scrolled ? 'active' : ''} id={id}>
       <div className={`about ${scrolled ? 'active' : ''}`}>
-        <h2>{t('About me')}</h2>
-      </div>
-      <div className="layout">
+        <h2 className='about-h1'>{t('About me')}</h2>
         <Styled.Me>
           <div className="me-img">
             <img src={profile} alt="" />
@@ -51,6 +49,8 @@ export const About = ({ id }) => {
             <Social />
           </div>
         </Styled.Me>
+      </div>
+      <div className="layout">
         <Tabs tabs={tabs} />
       </div>
     </Styled.Wrapper>

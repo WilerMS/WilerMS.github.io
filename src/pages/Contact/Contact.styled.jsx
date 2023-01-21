@@ -31,12 +31,12 @@ export const LayoutTitle = styled.div`
 
 export const ContactForm = styled.div`
    display : grid;
-   grid-template-areas: "name name""email phone""message message";
+   grid-template-areas: "name name""email phone""message message""send send";
    width: 70%;
    gap: 30px;
 
     @media (max-width: ${constants.MEDIA_QUERIES.md}px) {
-        grid-template-areas: "name""email""phone""message";
+        grid-template-areas: "name""email""phone""message""send";
         width: 100%;
     }
 
@@ -113,29 +113,34 @@ export const ContactForm = styled.div`
         grid-area: message;
 
         textarea {
-            min-height: 400px;
-            resize: vertical;
+            min-height: 350px;
+            resize: none;
+
+            @media (max-width: ${constants.MEDIA_QUERIES.md}px) {
+                min-height: 250px;
+            }
         }
     }
-`
 
-export const ContactName = styled.div`
-    grid-area: name;
-    height: 100px;
-`
-export const ContactEmail = styled.div`
-    grid-area: email;
-    height: 100px;
-`
-export const ContactPhone = styled.div`
-    grid-area: phone;
-    height: 100px;
-`
-export const ContactMessage = styled.div`
-    grid-area: message;
+    .send {
+        grid-area: send;
+        text-align: center;
+        letter-spacing: 1px;
+        font-size: 16px;
+        border-radius: 6px;
+        padding: 14px 32px;
+        border: none;
+        font-weight: 600;
+        background-color: #342a7b;
+        color: white;
+        cursor: pointer;
+        transition: background-color .2s ease;
+        height: 70px;
+        z-index: 1;
+        margin-bottom: 150px;
 
-    textarea {
-        min-height: 400px;
-        resize: vertical;
+        &:hover {
+            background-color: #0f0c28;
+        }
     }
 `

@@ -60,7 +60,7 @@ const MobileNavbar = () => {
   const [isExpanded, setIsExpanded] = useState(false)
 
   return (
-    <Mobile.Wrapper className='navbar-section'>
+    <Mobile.Wrapper className={`navbar-section ${!isExpanded ? 'active' : ''}`}>
       <Mobile.Navbar className='navbar'>
         <nav className='navbar-items'>
           <Mobile.NavMenu

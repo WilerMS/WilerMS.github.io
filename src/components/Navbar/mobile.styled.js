@@ -10,6 +10,7 @@ export const Wrapper = styled.section`
   display: flex;
   justify-content: end;
   padding-right: calc(100vh * 0.025);
+  transition: width .5s ease;
 
   * {
     -webkit-touch-callout:none;
@@ -40,6 +41,7 @@ export const Navbar = styled.div`
   .navbar-items {
     display: flex;
     gap: 30px;
+    z-index: 2;
   }
   
   a, svg, span {

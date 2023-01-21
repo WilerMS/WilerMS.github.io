@@ -8,7 +8,7 @@ import * as constants from '@src/constants/styles.constants'
 
 const Container = styled.div`
     width: 100%;
-    height: 80px;
+    height: 50px;
     display: flex;
     gap: 30px;
     align-items: center;
@@ -19,13 +19,13 @@ const Container = styled.div`
 `
 
 const Link = styled.a`
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     display: flex;
     align-items: flex-end;
     text-decoration: none;
     border-radius: 50%;
-    font-size: 2rem;
+    font-size: 1.2rem;
 
     svg {
         transition: color .5s ease;

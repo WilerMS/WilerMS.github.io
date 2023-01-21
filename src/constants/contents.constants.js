@@ -15,7 +15,7 @@ export const pages = [
   { id: 'home', href: '#home', text: 'Home', Icon: RiHome2Line, Component: Home },
   { id: 'about', href: '#about', text: 'About me', Icon: RiTrophyLine, Component: About },
   /* { id: 'qualification', href: '#qualification', text: 'Qualification', Icon: RiBookReadLine, Component: About }, */
-  { id: 'projects', href: '#projects', text: 'Projects', Icon: RiImageFill, Component: Projects },
+  /* { id: 'projects', href: '#projects', text: 'Projects', Icon: RiImageFill, Component: Projects }, */
   { id: 'contact', href: '#contact', text: 'Contact', Icon: RiChat3Line, Component: Contact },
 ]
 
@@ -36,7 +36,7 @@ export const skills = [
       { title: 'HTML', subtitle: 'Advanced', img: require('@static/html.svg').default },
       { title: 'CSS', subtitle: 'Advanced', img: require('@static/css.svg').default },
       { title: 'JavaScript', subtitle: 'Advanced', img: require('@static/javascript.svg').default },
-      { title: 'React', subtitle: 'Intermediate', img: require('@static/react.svg').default },
+      { title: 'React', subtitle: 'Advanced', img: require('@static/react.svg').default },
       { title: 'Photoshop', subtitle: 'Intermediate', img: require('@static/photoshop.svg').default },
       { title: 'SASS', subtitle: 'Intermediate', img: require('@static/sass.svg').default },
     ],
@@ -48,7 +48,7 @@ export const skills = [
       { title: 'TypeScript', subtitle: 'Intermediate', img: require('@static/typescript.svg').default },
       { title: 'MySQL', subtitle: 'Intermediate', img: require('@static/mysql.svg').default },
       { title: 'PostgreSQL', subtitle: 'Intermediate', img: require('@static/postgresql.svg').default },
-      { title: 'Docker', subtitle: 'Basic', img: require('@static/docker.svg').default },
+      { title: 'Docker', subtitle: 'Intermediate', img: require('@static/docker.svg').default },
       { title: 'PHP', subtitle: 'Intermediate', img: require('@static/php.svg').default },
     ],
   },

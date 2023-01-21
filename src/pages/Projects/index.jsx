@@ -1,13 +1,15 @@
 import React from 'react'
 
+import * as Styled from './Projects.styled'
+
 export const Projects = ({id}) => {
+
+
   return (
-    <div id={id}
-        style={{
-            height: '120vh'
-        }}
-    >
+    <Styled.Wrapper id={id}>
       <span>Projects</span>
-    </div>
+
+      
+    </Styled.Wrapper>
   )
 }
