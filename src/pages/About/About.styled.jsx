@@ -4,7 +4,7 @@ import * as constants from '@src/constants/styles.constants'
 export const Wrapper = styled.div`
     width: 100%;
     min-height: calc(100vh - ${constants.DESKTOP_NAVBAR_HEIGHT});
-    padding-top: calc(${constants.DESKTOP_NAVBAR_HEIGHT} + 350px);
+    /* padding-top: calc(${constants.DESKTOP_NAVBAR_HEIGHT} + 350px); */
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
     margin-bottom: 100px;
 
     @media (max-width: ${constants.MEDIA_QUERIES.sm}px) {
-        padding-top: 50px;
+       
     }
 
     .layout {
@@ -29,22 +29,19 @@ export const Wrapper = styled.div`
     }
 
     .about {
-        width: 100%;
-        height: 470px;
+        min-height: 470px;
         max-width: ${constants.MAX_WIDTH};
         width: ${constants.WRAPPER_WIDTHS.lg};
         background: ${props => props.theme.page_bg};
         box-shadow: 0px -15px 7px -2px #0000000f;
         border-radius: 100px;
-        position: absolute;
-        top: -135px;
         box-shadow:  0px 15px 36px -9px rgba(0,0,0,0.42);
-
+        margin-top: -135px;
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 20px;
-        transition: top .5s ease;
+        transition: margin .5s ease;
 
         &-h1 {
             margin: 25px 0;
@@ -53,11 +50,22 @@ export const Wrapper = styled.div`
         }
 
         &.active {
-            top: 0px;
+            margin-top: 0;
         }
 
         @media (max-width: ${constants.MEDIA_QUERIES.sm}px) {
             display: none;
+        }
+
+        @media (max-width: ${constants.MEDIA_QUERIES.md}px) {
+
+            h2 {
+                text-align: left;
+            }
+
+            .social {
+                justify-content: center;
+            }
         }
     }
 `
@@ -110,12 +118,7 @@ export const Me = styled.div`
             width: 250px;
             height: 250px;
             overflow: hidden;
-            border-radius: 20%;
-
-            @media (max-width: ${constants.MEDIA_QUERIES.sm}px) {
-                width: 300px;
-                height: 300px;
-            }  
+            border-radius: 20%; 
 
             img {
                 width: 100%;

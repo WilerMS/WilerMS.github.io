@@ -40,7 +40,7 @@ const Link = styled.a`
 
 const Social = () => {
     return (
-        <Container>
+        <Container className='social'>
             <Link href="google.com" color='#3498DB'>
                 <RiLinkedinFill />
             </Link>

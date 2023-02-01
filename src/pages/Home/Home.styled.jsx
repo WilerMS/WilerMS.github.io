@@ -48,6 +48,10 @@ export const Wrapper = styled.div`
     flex-direction: column;
     justify-content: center;
 
+    @media (max-width: ${constants.MEDIA_QUERIES.sm}px) {
+        padding-top: 70px;
+    }
+
     .layout {
         display: flex;
         align-items: center;
@@ -128,6 +132,25 @@ export const Wrapper = styled.div`
             @media (max-width: ${constants.MEDIA_QUERIES.sm}px) {
                 img { display: none;}
             }
+        }
+
+        .social { 
+            z-index: 100;
+        }
+
+    }
+    .me-img {
+        width: 300px;
+        height: 300px;
+        overflow: hidden;
+        border-radius: 20%; 
+        margin-bottom: 25px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 40%;
         }
     }
 `
